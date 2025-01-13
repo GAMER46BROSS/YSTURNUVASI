@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnuva Sistemi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Turnuva Kayıt ve Yönetim Sistemi</h1>
+  </header>
+  <main>
+    <section id="registration">
+      <h2>Kayıt Ol</h2>
+      <form id="registerForm">
+        <input type="text" id="username" placeholder="Kullanıcı Adı" required>
+        <input type="password" id="password" placeholder="Şifre" required>
+        <input type="email" id="email" placeholder="E-posta" required>
+        <input type="text" id="brawlId" placeholder="Brawl Stars ID (# ile başlamalı)" required>
+        <select id="team" required>
+          <option value="">Takım Seçiniz</option>
+          <option value="Y Takımı">Y Takımı</option>
+          <option value="S Takımı">S Takımı</option>
+        </select>
+        <button type="submit">Kayıt Ol</button>
+        <div id="error" class="error"></div>
+      </form>
+    </section>
+    <section id="results">
+      <h2>Kayıtlı Kullanıcılar</h2>
+      <ul id="userList"></ul>
+    </section>
+    <section id="winners">
+      <h2>Yarışma Kazananları</h2>
+      <ul id="winnersList"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
